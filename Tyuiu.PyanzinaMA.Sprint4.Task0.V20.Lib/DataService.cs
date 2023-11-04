@@ -11,7 +11,15 @@ namespace Tyuiu.PyanzinaMA.Sprint4.Task0.V20.Lib
     {
         public int GetMultEvenArrEl(int[] array)
         {
-            
+            int mult = 1;
+            for (int i = 0; i < array.Length; i++)
+            {
+                if (array[i] % 2 == 0)
+                {
+                    mult *= array[i];
+                }
+            }
+            return mult;
         }
     }
 }

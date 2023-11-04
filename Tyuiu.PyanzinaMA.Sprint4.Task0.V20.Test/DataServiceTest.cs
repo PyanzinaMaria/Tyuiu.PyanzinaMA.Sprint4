@@ -8,8 +8,13 @@ namespace Tyuiu.PyanzinaMA.Sprint4.Task0.V20.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void ValidGetMultEvenArrEl()
         {
+            DataService ds = new DataService();
+            int[] numsArray = { 4, 8, 7, 6, 5, 8, 2, 4, 3, 2 };
+            int wait = 24576;
+            int res = ds.GetMultEvenArrEl(numsArray);
+            Assert.AreEqual(wait, res);
         }
     }
 }
