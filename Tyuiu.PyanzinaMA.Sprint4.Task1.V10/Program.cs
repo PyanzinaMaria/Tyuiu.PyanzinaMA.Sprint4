@@ -24,7 +24,7 @@ namespace Tyuiu.PyanzinaMA.Sprint4.Task1.V10
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Дан одномерный целочисленный массив на 11 элементов заполненный         *");
             Console.WriteLine("* значениями с клавиатуры в диапазоне от 1 до 8 подсчитать произведение   *");
-            Console.WriteLine("* нечетных элементов массива.                                             *");
+            Console.WriteLine("* нечетных элементов массива.С клавиатуры: 5, 6, 8, 3, 5, 2, 4, 4, 1, 3, 5*");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
@@ -49,7 +49,7 @@ namespace Tyuiu.PyanzinaMA.Sprint4.Task1.V10
                 Console.Write(Array[i] + ", ");
             }
 
-            Console.WriteLine($"Произведение нечетных элементов = {ds.Calculate(Array)}");
+            Console.WriteLine($"произведение нечетных элементов = {ds.Calculate(Array)}");
             Console.ReadKey();
         }
     }
